@@ -8,9 +8,16 @@
      font-weight: 700;
      border-radius: 5px;
      font-size: 1.6rem;
-     &--xl{
+     cursor: pointer;
+     &--md{
          width: 26rem;
          height: 6rem;
+         background: $color-hero-secondary;
+     }
+     &--xl{
+         width: 28.4rem;
+         height: 6rem;
+
      }
     
 }

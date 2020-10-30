@@ -1,4 +1,118 @@
-.simpleat{
-    grid-row: 4/4;
-    grid-column: 1/-1;
+.simpleat {
+  grid-column: 2/14;
+  min-height: 777px;
+  text-align: center;
+  padding: 98px 0;
+  &__heading {
+    text-transform: uppercase;
+    font-family: $font-display;
+    font-size: 4rem;
+    margin-bottom: 50px;
+  }
+  & h3 {
+    color: $color-dark-2;
+    font-family: $font-display;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 45px;
+  }
+}
+
+.boxWrapp {
+  display: flex;
+  margin-bottom: 20px;
+  &__box {
+    border-radius: 50px;
+    width: 50%;
+    height: 50%;
+    position: relative;
+
+    & img:nth-child(1) {
+      width: 16rem;
+      height: 16rem;
+      border-radius: 100%;
+      margin-bottom: 40px;
+    }
+    & img:nth-child(3) {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    & h3 {
+      font-family: $font-primary;
+      font-weight: 400;
+      color: $color-dark-1;
+      font-size: 2rem;
+    }
+    & p {
+      font-size: 1.6rem;
+      color: $color-dark-2;
+      margin: 0 auto;
+      width: 82%;
+    }
+  }
+  &__box1 .background {
+    background: #2a854d;
+    width: 16rem;
+    height: 16rem;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    border-radius: 86px;
+    opacity: 0.5;
+  }
+  &__box2 .background {
+    background: #7ad2e4;
+    width: 16rem;
+    height: 16rem;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    border-radius: 86px;
+    opacity: 0.5;
+  }
+  &__box3 .background {
+    background: #82d0ce;
+    width: 16rem;
+    height: 16rem;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    border-radius: 86px;
+    opacity: 0.5;
+  }
+
+  &__box4 .background {
+    background: #fcadb5;
+    width: 16rem;
+    height: 16rem;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    border-radius: 86px;
+    opacity: 0.5;
+  }
+
+  &__box5 .background {
+    background: #e5c159;
+    width: 16rem;
+    height: 16rem;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    border-radius: 86px;
+    opacity: 0.5;
+  }
+
+  &__box6 .background {
+    background: #e496dd;
+    width: 16rem;
+    height: 16rem;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    border-radius: 86px;
+    opacity: 0.5;
+  }
 }

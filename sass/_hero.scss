@@ -17,11 +17,12 @@
   grid-column: 2/2;
   display: flex;
   flex-direction: column;
+  
   &__text {
     text-align: center;
     &__heading {
       text-transform: uppercase;
-      font-family: $font-primary;
+      font-family: $font-display;
       font-size: 4rem;
       margin-bottom: 54px;
     }
@@ -29,7 +30,9 @@
       font-family: $font-display;
       font-size: 1.6rem;
       color: $color-dark-2;
+      margin: 0 auto;
       margin-bottom: 16px;
+      width: 80%;
     }
     &__order {
       font-family: $font-display;
@@ -96,12 +99,12 @@
           transform: translate(-50%, -50%);
         }
       }
-        & .checkmark:after {
-          content: "";
-          position: absolute;
-          display: none;
-          background-position: center;
-        }
+      & .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+        background-position: center;
+      }
     }
     &__text {
       font-size: 1.6rem;
@@ -111,46 +114,44 @@
         font-weight: 900;
       }
     }
-    &__box input:checked ~ .checkmark  {
-        border: none;
-        & span{
-            display: none;
-        }
-        
-      background-color:  $color-secondary;
+    &__box input:checked ~ .checkmark {
+      border: none;
+      & span {
+        display: none;
+      }
+
+      background-color: $color-secondary;
     }
-    &__box input:checked ~.checkmark::after{
-        display: block;
+    &__box input:checked ~ .checkmark::after {
+      display: block;
     }
-    &__box .checkmark::after{
-        left: 50%;
-        top: 50%;
-        width: 20px;
-        height: 16px;
-        transform: translate(-50%, -50%);
-        background: url(../img/icons/checkbox-selected.png) no-repeat;
+    &__box .checkmark::after {
+      left: 50%;
+      top: 50%;
+      width: 20px;
+      height: 16px;
+      transform: translate(-50%, -50%);
+      background: url(../img/icons/checkbox-selected.png) no-repeat;
     }
-    &__box input:checked ~ .selectBotels__checkbox__text b{
-        color: $color-secondary;
+    &__box input:checked ~ .selectBotels__checkbox__text b {
+      color: $color-secondary;
     }
   }
 }
 .calories {
-    display: flex;
-    justify-content: space-between;
-    width: 84%;
-    align-items: center;
-    &__price{
-        & span:nth-child(1){
-            font-family: $font-display;
-            font-weight: 900;
-            font-size: 1.6rem;
-
-        }
-        & span{
-            font-size: 1.6rem;
-            font-family: $font-display;
-        }
+  display: flex;
+  justify-content: space-between;
+  width: 84%;
+  align-items: center;
+  &__price {
+    & span:nth-child(1) {
+      font-family: $font-display;
+      font-weight: 900;
+      font-size: 1.6rem;
     }
-
+    & span {
+      font-size: 1.6rem;
+      font-family: $font-display;
+    }
+  }
 }
