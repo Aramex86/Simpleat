@@ -1,0 +1,16 @@
+.btn{
+    width: 13.1rem;
+    height: 4.3rem;
+    background:$color-hero-secondary ;
+    border: none;
+    color: $color-light-1;
+     font-family: $font-display;
+     font-weight: 700;
+     border-radius: 5px;
+     font-size: 1.6rem;
+     &--xl{
+         width: 26rem;
+         height: 6rem;
+     }
+    
+}

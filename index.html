@@ -14,25 +14,25 @@
     <div class="container">
         <header class="header">
             <div class="cartContact">
-                <a href="#">
-                    <svg class="icon icon-cart">
+                <a href="#" class="cartContact__link">
+                    <svg class="cartContact__icon">
                         <use xlink:href="img/sprite.svg#icon-cart"></use>
                     </svg>
                     Cart
                 </a>
-                <a href="#"> Contact </a>
+                <a href="#" class="cartContact__link"> Contact </a>
             </div>
             <div class="logo">
                 <img src="./img/icons/logo.png" alt="logo" />
             </div>
             <div class="singInOrder">
-                <a href="#">
-                    <svg class="icon icon-cart">
+                <a href="#" class="singInOrder__link">
+                    <svg class="singInOrder__icon">
                         <use xlink:href="img/sprite.svg#icon-profile-male"></use>
                     </svg>
                     Sing in
                 </a>
-                <button class="btn-m">Order now</button>
+                <button class="btn">Order now</button>
             </div>
         </header>
         <section class="hero">
@@ -41,7 +41,7 @@
             </div>
             <div class="subscribe">
                 <div class="subscribe__text">
-                    <h2 class="subscribe__text__headeing">more than food</h2>
+                    <h2 class="subscribe__text__heading">more than food</h2>
                     <p class="subscribe__text__desc">
                         Everything your body needs in one bottle of Simpleat. Drink
                         Simpleat and forget about hunger. Be the first to try nutrition
@@ -52,21 +52,33 @@
                     </p>
                 </div>
                 <div class="selectBotels">
-                    <select name="" class="selectO">
+                    <select name="" class="selectBotels__select">
                         <option value="1">12 botels</option>
-                        <option value="2">9 botels</option>
-                        <option value="3">5 botels</option>
+                        <option value="2">24 botels</option>
+                        <option value="3">48 botels</option>
+                        <option value="4">60 botels</option>
+                        <option value="5">72 botels</option>
+                        <option value="6">84 botels</option>
+                        <option value="7">96 botels</option>
+                        <option value="8">108 botels</option>
+                        <option value="9">120 botels</option>
                     </select>
                     <div class="selectBotels__checkbox">
-                        <input type="checkbox" id='onetime' />
-                        <label for="onnetime">One Time</br>Purchase</label>
-                        <div class="tooltip">
+                        <div class="tooltip" style="display: none;">
                             <p>By subscribing you will receive 12 bottles of Simpleat monthly </p>
                             <p>You can cancel your subscription anytime.<a href="#"> Learn more</a> </p>
-
                         </div>
-                        <input type="checkbox" id='subscribe' />
-                        <label for="subscribe">Subscribe</br>and save 5%</label>
+                            <label class="selectBotels__checkbox__box selectBotels__checkbox__box1" for="onnetime">
+                                <input type="checkbox" id='onetime' />
+                                <span class="selectBotels__checkbox__text"><b>One Time</b></br>Purchase</span>
+                                <span class="checkmark"><span></span></span>
+                            </label>
+                    </l>
+                            <label class="selectBotels__checkbox__box selectBotels__checkbox__box2" for="subscribe">
+                                <input type="checkbox" id='subscribe' />
+                                <span class="selectBotels__checkbox__text"><b>Subscribe</b></br>and save 5%</span>
+                                <span class="checkmark"><span></span></span>
+                            </label>
                     </div>
                 </div>
                 <div class="calories">
@@ -74,7 +86,7 @@
                         <span> &euro; 32</span></br>
                         <span>&euro;2.60 per meal (400 kcal)</span>
                     </p>
-                    <button class="btn-xl">Add to cart</button>
+                    <button class="btn btn--xl">Add to cart</button>
                 </div>
             </div>
         </section>

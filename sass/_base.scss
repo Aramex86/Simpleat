@@ -10,11 +10,13 @@ $color-footer-primary:#192632;
 $color-footer-secondary:#121920;
 
 //
-$color-grey-light-1: #f9f7f6;
-$color-grey-light-2: #aaa;
+$color-light-1: #ffffff;
+//$color-grey-light-2: #aaa;
 
-$color-grey-dark-1: #54483A;
-$color-grey-dark-2: #6D5D4B;
+$color-dark-1: #121920;
+$color-dark-2: #5a6065;
+
+//$color-grey-dark-2: #6D5D4B;
 
 // FONT VARIABLES
 $font-primary: 'Bebas Neue', cursive;
@@ -57,6 +59,10 @@ body{
     display: grid;
     //grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
     //grid-template-columns:[sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem)[col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+    grid-template-columns: 1fr repeat(12, minmax(min-content,9.7rem))1fr;
+    margin: 0 auto;
+    gap: 1.5rem;
+    //grid-template-rows: repeat(10,1fr);
 
 //     @media only screen and (max-width: $bp-large){
 //         grid-template-rows:6rem 80vh min-content 40vw repeat(3, min-content);

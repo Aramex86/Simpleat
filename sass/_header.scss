@@ -1,0 +1,54 @@
+.header {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1.7rem 0;
+  background: $color-primary-dark;
+  justify-items: center;
+}
+
+.cartContact {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  grid-column: 1/1;
+  justify-content: end;
+  &__link {
+    text-decoration: none;
+    color: $color-dark-1;
+    font-family: $font-display;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+  }
+  &__link:nth-child(1) {
+    padding-right: 5rem;
+  }
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.logo {
+  width: 60%;
+  grid-column: 2/3;
+  text-align: center;
+}
+
+.singInOrder {
+  display: flex;
+  grid-column: 3/-1;
+  align-items: center;
+  &__link {
+    margin-right: 28px;
+    text-decoration: none;
+    color: $color-dark-1;
+    font-family: $font-display;
+    font-size: 1.6rem;
+  }
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}

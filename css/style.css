@@ -14,4 +14,228 @@ body {
   line-height: 1.6; }
 
 .container {
-  display: grid; }
+  display: grid;
+  grid-template-columns: 1fr repeat(12, minmax(min-content, 9.7rem)) 1fr;
+  margin: 0 auto;
+  gap: 1.5rem; }
+
+.btn {
+  width: 13.1rem;
+  height: 4.3rem;
+  background: #78bc61;
+  border: none;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: 1.6rem; }
+  .btn--xl {
+    width: 26rem;
+    height: 6rem; }
+
+.chart {
+  grid-row: 8/8;
+  grid-column: 1/-1; }
+
+.footer {
+  grid-column: 1/-1; }
+
+.header {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1.7rem 0;
+  background: #f0f6f4;
+  justify-items: center; }
+
+.cartContact {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  grid-column: 1/1;
+  justify-content: end; }
+  .cartContact__link {
+    text-decoration: none;
+    color: #121920;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center; }
+  .cartContact__link:nth-child(1) {
+    padding-right: 5rem; }
+  .cartContact__icon {
+    width: 2rem;
+    height: 2rem; }
+
+.logo {
+  width: 60%;
+  grid-column: 2/3;
+  text-align: center; }
+
+.singInOrder {
+  display: flex;
+  grid-column: 3/-1;
+  align-items: center; }
+  .singInOrder__link {
+    margin-right: 28px;
+    text-decoration: none;
+    color: #121920;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem; }
+  .singInOrder__icon {
+    width: 2rem;
+    height: 2rem; }
+
+.hero {
+  grid-column: 2/14;
+  min-height: 700px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 8.8rem 0; }
+
+.botels {
+  grid-column: 1/1; }
+  .botels__img {
+    width: 80%; }
+
+.subscribe {
+  grid-column: 2/2;
+  display: flex;
+  flex-direction: column; }
+  .subscribe__text {
+    text-align: center; }
+    .subscribe__text__heading {
+      text-transform: uppercase;
+      font-family: "Bebas Neue", cursive;
+      font-size: 4rem;
+      margin-bottom: 54px; }
+    .subscribe__text__desc {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.6rem;
+      color: #5a6065;
+      margin-bottom: 16px; }
+    .subscribe__text__order {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.6rem;
+      color: #121920;
+      font-weight: 700;
+      margin-bottom: 28px; }
+
+.selectBotels__select {
+  width: 55.5rem;
+  height: 5.6rem;
+  margin: 0 auto;
+  border: 2px solid #e5e4d7;
+  border-radius: 5px;
+  padding: 0 1rem;
+  appearance: none;
+  background: url(/img/icons/arows.png) 100%/100% no-repeat #fff;
+  background-size: 7%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400; }
+
+.selectBotels__checkbox {
+  margin-top: 20px;
+  display: flex;
+  justify-content: start;
+  margin-bottom: 40px; }
+  .selectBotels__checkbox__box {
+    width: 27%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .selectBotels__checkbox__box input {
+      position: absolute;
+      cursor: pointer;
+      height: 33px;
+      width: 22px;
+      left: 15px;
+      z-index: 22;
+      opacity: 0; }
+    .selectBotels__checkbox__box .checkmark {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      height: 40px;
+      width: 40px;
+      border: 2px solid #e5e4d7;
+      border-radius: 5px; }
+      .selectBotels__checkbox__box .checkmark span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: #e5e4d7;
+        display: block;
+        border-radius: 3px;
+        transform: translate(-50%, -50%); }
+    .selectBotels__checkbox__box .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+      background-position: center; }
+  .selectBotels__checkbox__text {
+    font-size: 1.6rem;
+    margin-left: 30px; }
+    .selectBotels__checkbox__text b {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 900; }
+  .selectBotels__checkbox__box input:checked ~ .checkmark {
+    border: none;
+    background-color: #36c1ba; }
+    .selectBotels__checkbox__box input:checked ~ .checkmark span {
+      display: none; }
+  .selectBotels__checkbox__box input:checked ~ .checkmark::after {
+    display: block; }
+  .selectBotels__checkbox__box .checkmark::after {
+    left: 50%;
+    top: 50%;
+    width: 20px;
+    height: 16px;
+    transform: translate(-50%, -50%);
+    background: url(../img/icons/checkbox-selected.png) no-repeat; }
+  .selectBotels__checkbox__box input:checked ~ .selectBotels__checkbox__text b {
+    color: #36c1ba; }
+
+.calories {
+  display: flex;
+  justify-content: space-between;
+  width: 84%;
+  align-items: center; }
+  .calories__price span:nth-child(1) {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem; }
+  .calories__price span {
+    font-size: 1.6rem;
+    font-family: "Montserrat", sans-serif; }
+
+.ingridients {
+  grid-row: 6/6;
+  grid-column: 1/-1; }
+
+.newsletter {
+  grid-column: 1/-1; }
+
+.nutritional {
+  grid-row: 7/7;
+  grid-column: 1/-1; }
+
+.simpleat {
+  grid-row: 4/4;
+  grid-column: 1/-1; }
+
+.superFood {
+  grid-row: 9/9;
+  grid-column: 1/-1; }
+
+.testimonials {
+  grid-row: 5/5;
+  grid-column: 1/-1; }
+
+.video {
+  grid-row: 3/3;
+  grid-column: 1/-1; }
