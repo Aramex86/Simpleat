@@ -1,4 +1,42 @@
-.nutritional{
-    grid-row: 7/7;
-    grid-column: 1/-1;
+.nutritional {
+  grid-column: 1/-1;
+  min-height: 885px;
+  background: $color-primary-dark;
+  text-align: center;
+  padding: 97px 0;
+  &__heading {
+    text-transform: uppercase;
+    font-family: $font-display;
+    font-size: 4rem;
+    margin-bottom: 50px;
+  }
+  &__footer{
+    display: flex;
+    flex-direction: column;
+    width: 8%;
+    margin: 0 auto;
+    & a{
+        color: $color-hero-secondary;
+        margin-bottom: 38px;
+        font-size: 1.6rem;
+    }
+  }
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+  &__left {
+    width: 33%;
+  }
+  &__center {
+    width: 33%;
+    display: flex;
+    & img:nth-child(3) {
+      width: 100%;
+    }
+  }
+  &__right {
+    width: 33%;
+  }
 }

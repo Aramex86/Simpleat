@@ -1,4 +1,20 @@
 .chart{
-    grid-row: 8/8;
-    grid-column: 1/-1;
+    grid-column: 2/14;
+    min-height: 717px;
+    padding: 97px 0;
+    text-align: center;
+    &__heading{
+        text-transform: uppercase;
+        font-family: $font-display;
+        font-size: 4rem;
+        margin-bottom: 54px;
+    }
+    & p{
+        font-family: $font-display;
+        font-size: 1.6rem;
+        color: $color-dark-2;
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
 }

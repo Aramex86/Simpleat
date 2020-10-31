@@ -1,5 +1,47 @@
-.ingridients{
-    grid-row: 6/6;
-    grid-column: 1/-1;
-    min-height: 777px;
+.ingridients {
+  grid-row: 6/6;
+  grid-column: 2/14;
+  min-height: 745px;
+  padding: 98px 0;
+  text-align: center;
+  &__heading {
+    text-transform: uppercase;
+    font-family: $font-display;
+    font-size: 4rem;
+    margin-bottom: 50px;
+  }
+  & span {
+    font-family: $font-display;
+    font-size: 1.6rem;
+    color: $color-dark-2;
+    width: 80%;
+  }
+}
+.ingrdBoxWrapp {
+  margin-top: 40px;
+  display: flex;
+  &__box {
+    width: 20%;
+display: flex;
+flex-direction: column;
+align-items: center;
+    & img {
+      width: 19.5rem;
+      height: 19.5rem;
+      border-radius: 100px;
+      margin-bottom: 18px;
+    }
+    & h3 {
+      font-family: $font-primary;
+      font-weight: 400;
+      color: $color-dark-1;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    & p {
+      font-size: 1.6rem;
+      color: $color-dark-2;
+      width: 82%;
+    }
+  }
 }

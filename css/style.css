@@ -39,8 +39,22 @@ body {
     height: 6rem; }
 
 .chart {
-  grid-row: 8/8;
-  grid-column: 1/-1; }
+  grid-column: 2/14;
+  min-height: 717px;
+  padding: 97px 0;
+  text-align: center; }
+  .chart__heading {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 4rem;
+    margin-bottom: 54px; }
+  .chart p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    color: #5a6065;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 40px; }
 
 .footer {
   grid-column: 1/-1; }
@@ -222,15 +236,81 @@ body {
 
 .ingridients {
   grid-row: 6/6;
-  grid-column: 1/-1;
-  min-height: 777px; }
+  grid-column: 2/14;
+  min-height: 745px;
+  padding: 98px 0;
+  text-align: center; }
+  .ingridients__heading {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 4rem;
+    margin-bottom: 50px; }
+  .ingridients span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    color: #5a6065;
+    width: 80%; }
+
+.ingrdBoxWrapp {
+  margin-top: 40px;
+  display: flex; }
+  .ingrdBoxWrapp__box {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .ingrdBoxWrapp__box img {
+      width: 19.5rem;
+      height: 19.5rem;
+      border-radius: 100px;
+      margin-bottom: 18px; }
+    .ingrdBoxWrapp__box h3 {
+      font-family: "Bebas Neue", cursive;
+      font-weight: 400;
+      color: #121920;
+      font-size: 2rem;
+      margin-bottom: 30px; }
+    .ingrdBoxWrapp__box p {
+      font-size: 1.6rem;
+      color: #5a6065;
+      width: 82%; }
 
 .newsletter {
   grid-column: 1/-1; }
 
 .nutritional {
-  grid-row: 7/7;
-  grid-column: 1/-1; }
+  grid-column: 1/-1;
+  min-height: 885px;
+  background: #f0f6f4;
+  text-align: center;
+  padding: 97px 0; }
+  .nutritional__heading {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 4rem;
+    margin-bottom: 50px; }
+  .nutritional__footer {
+    display: flex;
+    flex-direction: column;
+    width: 8%;
+    margin: 0 auto; }
+    .nutritional__footer a {
+      color: #78bc61;
+      margin-bottom: 38px;
+      font-size: 1.6rem; }
+
+.wrapper {
+  display: flex;
+  position: relative; }
+  .wrapper__left {
+    width: 33%; }
+  .wrapper__center {
+    width: 33%;
+    display: flex; }
+    .wrapper__center img:nth-child(3) {
+      width: 100%; }
+  .wrapper__right {
+    width: 33%; }
 
 .simpleat {
   grid-column: 2/14;
@@ -264,7 +344,7 @@ body {
       margin-bottom: 40px; }
     .boxWrapp__box img:nth-child(3) {
       position: absolute;
-      top: 25%;
+      top: 21%;
       left: 50%;
       transform: translate(-50%, -50%); }
     .boxWrapp__box h3 {
