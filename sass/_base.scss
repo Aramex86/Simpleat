@@ -38,27 +38,32 @@ $bp-small: 37.5em; //600px
 }
 
 html{
-    scroll-behavior: smooth;
    box-sizing: border-box;
    font-size: 62.5%; // 10px/16px=62.5% -> 1rem -10px
    
-   @media only screen and (max-width: $bp-largest){
-        font-size: 50%;
-   }
+//    @media only screen and (max-width: $bp-largest){
+//         font-size: 50%;
+//    }
 
 
 }
 
 body{
     font-family: $font-display;
+    // color: $color-grey-dark-2;
+    // font-weight: 300;
     line-height: 1.6;
 }
 
 .container{
     display: grid;
+    //grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+    //grid-template-columns:[sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem)[col-end]) [center-end] minmax(6rem, 1fr) [full-end];
     grid-template-columns: 1fr repeat(12, minmax(min-content,9.7rem))1fr;
     margin: 0 auto;
     gap: 1.5rem;
+    //grid-template-rows: repeat(10,1fr);
+
 //     @media only screen and (max-width: $bp-large){
 //         grid-template-rows:6rem 80vh min-content 40vw repeat(3, min-content);
 //         grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem)[col-end]) [center-end] minmax(6rem, 1fr) [full-end];

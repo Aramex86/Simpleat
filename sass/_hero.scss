@@ -5,7 +5,6 @@
   grid-template-columns: repeat(2, 1fr);
   padding: 8.8rem 0;
   position: relative;
-  margin-top: 11.2rem;
 }
 
 .botels {
@@ -19,10 +18,10 @@
   grid-column: 2/2;
   display: flex;
   flex-direction: column;
-
+  
   &__text {
     text-align: center;
-    & img {
+    & img{
       margin-bottom: 20px;
     }
     &__heading {
@@ -37,6 +36,7 @@
       color: $color-dark-2;
       margin: 0 auto;
       margin-bottom: 16px;
+      width: 80%;
     }
     &__order {
       font-family: $font-display;
@@ -50,8 +50,9 @@
 
 .selectBotels {
   &__select {
-    width: 66.5rem;
+    width: 55.5rem;
     height: 5.6rem;
+    margin: 0 auto;
     border: 2px solid #e5e4d7;
     border-radius: 5px;
     padding: 0 1rem;
@@ -67,14 +68,12 @@
     display: flex;
     justify-content: start;
     margin-bottom: 40px;
-    position: relative;
     &__box {
-      width: 50%;
+      width: 27%;
       position: relative;
       display: flex;
       align-items: center;
-      justify-content: flex-start;
-      cursor: pointer;
+      justify-content: center;
       & input {
         position: absolute;
         cursor: pointer;
@@ -113,7 +112,7 @@
     }
     &__text {
       font-size: 1.6rem;
-      margin-left: 7rem;
+      margin-left: 30px;
       & b {
         font-family: $font-display;
         font-weight: 900;
@@ -146,6 +145,7 @@
 .calories {
   display: flex;
   justify-content: space-between;
+  width: 84%;
   align-items: center;
   &__price {
     & span:nth-child(1) {
@@ -159,74 +159,35 @@
     }
   }
 }
-.cookies {
+.cookies{
   position: absolute;
   background: $color-dark-1;
-  color: $color-primary;
+  color:$color-primary;
   display: flex;
   width: 65.5rem;
   padding: 2.4rem 3rem;
   border-radius: 6px;
   align-items: center;
   bottom: -15%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  & p {
+    left: 50%;
+    transform: translate(-50%,-50%);
+  & p{
     width: 75%;
     font-family: $font-display;
     font-weight: 400;
     font-size: 1.3rem;
   }
-  & span {
+  & span{
     width: 2.2rem;
     height: 2.2rem;
     border: 2px solid #5a5e63;
     font-size: 1.6rem;
-    color: #5a5e63;
+    color:#5a5e63;
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
   }
-}
-.tooltip {
-  display: none;
-  position: absolute;
-  width: 27.7rem;
-  top: -218%;
-  left: 45%;
-  background: #fff;
-  height: 100px;
-  //display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 0px 8px 4px #9090908f;
-  border-radius: 5px;
-  
-  & p {
-    width: 80%;
-    font-size: 1.2rem;
-  }
-  & p:nth-child(1) {
-    margin-bottom: 14px;
-  }
-    & span{
-      display: block;
-      clip-path: polygon(53% 100%, 0 0, 100% 0);
-      position: absolute;
-      bottom: -7px;
-      background: #fff;
-      width: 9px;
-      height: 7px;
-    }
-    & a {
-      color: $color-secondary;
-    }
-  
-}
 
-.close__popup{
-  display: none;
 }

@@ -5,9 +5,6 @@
   padding: 1.7rem 0;
   background: $color-primary-dark;
   justify-items: center;
-  position: fixed;
-  width: 100%;
-  z-index: 2;
 }
 
 .cartContact {
@@ -43,7 +40,6 @@
   display: flex;
   grid-column: 3/-1;
   align-items: center;
-  
   &__link {
     margin-right: 28px;
     text-decoration: none;
