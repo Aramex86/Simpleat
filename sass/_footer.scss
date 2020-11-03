@@ -19,7 +19,7 @@
   margin-bottom: 30px;
   &__item {
     list-style: none;
-    padding: 0 2.5rem;
+    padding: 0 3.4rem;
   }
   &__link {
     background: $color-primary;
@@ -49,7 +49,7 @@
   margin-bottom: 30px;
   &__item {
     list-style: none;
-    padding: 0 3rem;
+    padding: 0 3.4rem;
   }
   &__item:not(:last-child) {
     border-right: 1px solid #445059;
@@ -85,8 +85,10 @@
       & p{
         font-family: $font-display;
         font-size: 1.1rem;
-        & span{
+        & a{
           font-size: 1.6rem;
+          color: $color-primary;
+          text-decoration: none;
         }
       }
     }

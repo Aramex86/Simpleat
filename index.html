@@ -32,10 +32,11 @@
                     </svg>
                     Sing in
                 </a>
-                <button class="btn">Order now</button>
+                <button class="btn"><a href="#scrollUp">Order now</a></button>
             </div>
         </header>
         <section class="hero">
+            <div id="scrollUp"></div>
             <div class="botels">
                 <img src="./img/Bottles.jpg" alt="botels" class="botels__img" />
             </div>
@@ -53,30 +54,31 @@
                     </p>
                 </div>
                 <div class="selectBotels">
-                    <select name="" class="selectBotels__select">
-                        <option value="1">12 botels</option>
-                        <option value="2">24 botels</option>
-                        <option value="3">48 botels</option>
-                        <option value="4">60 botels</option>
-                        <option value="5">72 botels</option>
-                        <option value="6">84 botels</option>
-                        <option value="7">96 botels</option>
-                        <option value="8">108 botels</option>
-                        <option value="9">120 botels</option>
+                    <select  class="selectBotels__select" onmouseover="setFocus()" onmouseout="removeFocus()">
+                        <option value="12">12 bottels</option>
+                        <option value="24">24 bottels</option>
+                        <option value="38">48 bottels</option>
+                        <option value="60">60 bottels</option>
+                        <option value="72">72 bottels</option>
+                        <option value="84">84 bottels</option>
+                        <option value="96">96 bottels</option>
+                        <option value="108">108 bottels</option>
+                        <option value="120">120 bottels</option>
                     </select>
                     <div class="selectBotels__checkbox">
-                        <div class="tooltip" style="display: none;">
+                        <div class="tooltip">
                             <p>By subscribing you will receive 12 bottles of Simpleat monthly </p>
                             <p>You can cancel your subscription anytime.<a href="#"> Learn more</a> </p>
+                            <span></span>
                         </div>
                             <label class="selectBotels__checkbox__box selectBotels__checkbox__box1" for="onnetime">
-                                <input type="checkbox" id='onetime' />
+                                <input type="checkbox" id='onetime'/>
                                 <span class="selectBotels__checkbox__text"><b>One Time</b></br>Purchase</span>
                                 <span class="checkmark"><span></span></span>
                             </label>
                     </l>
                             <label class="selectBotels__checkbox__box selectBotels__checkbox__box2" for="subscribe">
-                                <input type="checkbox" id='subscribe' />
+                                <input type="checkbox" id='subscribe' checked/>
                                 <span class="selectBotels__checkbox__text"><b>Subscribe</b></br>and save 5%</span>
                                 <span class="checkmark"><span></span></span>
                             </label>
@@ -93,7 +95,7 @@
             <div class="cookies">
                 <span>!</span>
                 <p>This website uses cookies. The information in the cookies is used to provide the best experience for you on our website.</p>
-                <button class="btn btn--sm">I agree </button>
+                <button class="btn btn--sm" onclick="hideMessage()">I agree </button>
             </div>
         </section>
         <section class="video">
@@ -107,9 +109,8 @@
                     work, business, travel or simply having fun.
                 </p>
             </div>
-            <div class="video__block">
-                <!--             <iframe width="560" height="315" src="https://www.youtube.com/embed/V6iKSUoUN48" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
- --> <img src="./img/video.jpg" alt="poster">
+            <div class="video__block" onclick="showVideo()">
+ <img src="./img/video.jpg" alt="poster">
                 <div class="video__block__play-btn">
                     <span><button>&#9655;</button></span>
                     <span>Play video</span>
@@ -168,6 +169,11 @@
             <button class="btn btn--xl">Order Simpleat</button>
         </section>
         <section class="testimonials">
+            <div class="testimonials__videowrapp">
+                <button class="btn btn--test" onclick="closeVideoBlock()"><span></span></button>
+                <div class="testimonials__videowrapp__box">
+                </div>
+            </div>
             <h2 class="testimonials__heading">Testimonials</h2>
             <img src="./img/icons/superfood-logo.png" alt="logo">
             <p>Simpleat is made to provide the perfectly balanced diet with every nutrient your body needs for
@@ -300,8 +306,8 @@
                 </div>
             </div>
             <div class="nutritional__footer">
-                <a href="#" download="#">Download PDF</a>
-                <button class="btn">Order now</button>
+                <a href="./img/pdf-test.pdf" download="nutritional facts">Download PDF</a>
+                <button class="btn btn--mdl">Order now</button>
             </div>
         </section>
         <section class="chart">
@@ -483,7 +489,7 @@
                         </ul>
                     </div>
                 </div>
-            <button class="btn">Order now</button>
+            <button class="btn btn--mdl">Order now</button>
         </section>
         <section class="newsletter">
             <h2 class="newsletter__heading">Join US</h2>
@@ -497,13 +503,13 @@
         <section class="footer">
             <div class="footer__topwrapp">
                 <ul class="social">
-                    <li class="social__item"><a href="#" class="social__link social__link--bottom"> <svg class="singInOrder__icon">
+                    <li class="social__item"><a href="https://www.facebook.com/" target="blank" class="social__link social__link--bottom"> <svg class="singInOrder__icon">
                         <use xlink:href="img/sprite.svg#icon-facebook"></use>
                     </svg></a></li>
-                    <li class="social__item"><a href="#" class="social__link"> <svg class="singInOrder__icon">
+                    <li class="social__item"><a href="https://www.twitter.com/" target="blank" class="social__link"> <svg class="singInOrder__icon">
                         <use xlink:href="img/sprite.svg#icon-twitter1"></use>
                     </svg></a></li>
-                    <li class="social__item"><a href="#" class="social__link"> <svg class="singInOrder__icon">
+                    <li class="social__item"><a href="https://www.instagram.com/" target="blank" class="social__link"> <svg class="singInOrder__icon">
                         <use xlink:href="img/sprite.svg#icon-instagram"></use>
                     </svg></a></li>
                 </ul>
@@ -518,11 +524,11 @@
                 <div class="footer__bottom__right">
                     <div>   
                         <img src="./img/icons/footerPhone.png" alt="phone">
-                        <p><span>+123 456-789-000</span></br> Every day from 8 AM - 8 PM</p>
+                        <p><a href="tel:123456789000">+123 456-789-000</a></br> Every day from 8 AM - 8 PM</p>
                     </div>
                     <div>   
                         <img src="./img/icons/footerAnvelope.png" alt="mail">
-                        <p><span>info@simleat.me</span></br>We will respond ASAP</p>
+                        <p><a href="mailto:info@simleat.me">info@simleat.me</a></br>We will respond ASAP</p>
                     </div>
 
                 </div>
@@ -538,6 +544,12 @@
             </div>
         </section>
     </div>
+    <div class="popup" id="popup" onclick="hideVideo()">
+        <div class="popup__content">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/J2lze3eXRiM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
     <script src="./js/scripts.js"></script>
+    <script src="./js/cookieCheck.js"></script>
 </body>
 </html>
