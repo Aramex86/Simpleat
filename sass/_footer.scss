@@ -1,3 +1,113 @@
-.footer{
-    grid-column: 1/-1;
+.footer {
+  grid-column: 1/-1;
+  &__topwrapp {
+    background: $color-footer-primary;
+    min-height: 250px;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-primary;
+    font-size: 1.6rem;
+    font-family: $font-display;
+    font-weight: 400;
+  }
+}
+.social {
+  display: flex;
+  margin-bottom: 30px;
+  &__item {
+    list-style: none;
+    padding: 0 3.4rem;
+  }
+  &__link {
+    background: $color-primary;
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.3rem;
+    & svg {
+      fill: $color-footer-primary;
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+    &--bottom {
+      align-items: flex-end;
+      justify-content: flex-end;
+      & svg {
+        height: 3rem;
+        width: 3rem;
+      }
+    }
+  }
+}
+.social__bottom {
+  display: flex;
+  margin-bottom: 30px;
+  &__item {
+    list-style: none;
+    padding: 0 3.4rem;
+  }
+  &__item:not(:last-child) {
+    border-right: 1px solid #445059;
+  }
+  &__link {
+    text-decoration: none;
+    color: $color-primary;
+    font-family: $font-display;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+  }
+}
+.footer__bottom{
+  display: flex;
+  background: $color-footer-secondary;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+  &__right{
+    display: flex;
+    align-items: center;
+    color: $color-primary;
+    justify-content: space-around;
+    width: 40%;
+    & div{
+      width: 45%;
+      display: flex;
+      align-items: center;
+      & img{
+        margin-right: 1.6rem;
+      }
+      & p{
+        font-family: $font-display;
+        font-size: 1.1rem;
+        & a{
+          font-size: 1.6rem;
+          color: $color-primary;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  &__left{
+    & select{
+      width: 19.5rem;
+      height: 4rem;
+      //background:#1e252b;
+      color:$color-primary;
+      border: none;
+      font-family: $font-display;
+      font-size: 1.6rem;
+      appearance: none;
+      background:url(../img/icons/arrow-down.png) 93% no-repeat,#1e252b;
+
+    }
+  & select#lang option[value='en']{
+      background-image: url(../img/icons/lang.png);
+    }
+  }
 }

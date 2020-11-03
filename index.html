@@ -32,16 +32,18 @@
                     </svg>
                     Sing in
                 </a>
-                <button class="btn">Order now</button>
+                <button class="btn"><a href="#scrollUp">Order now</a></button>
             </div>
         </header>
         <section class="hero">
+            <div id="scrollUp"></div>
             <div class="botels">
                 <img src="./img/Bottles.jpg" alt="botels" class="botels__img" />
             </div>
             <div class="subscribe">
                 <div class="subscribe__text">
                     <h2 class="subscribe__text__heading">more than food</h2>
+                    <img src="./img/icons/superfood-logo.png" alt="logo">
                     <p class="subscribe__text__desc">
                         Everything your body needs in one bottle of Simpleat. Drink
                         Simpleat and forget about hunger. Be the first to try nutrition
@@ -52,30 +54,31 @@
                     </p>
                 </div>
                 <div class="selectBotels">
-                    <select name="" class="selectBotels__select">
-                        <option value="1">12 botels</option>
-                        <option value="2">24 botels</option>
-                        <option value="3">48 botels</option>
-                        <option value="4">60 botels</option>
-                        <option value="5">72 botels</option>
-                        <option value="6">84 botels</option>
-                        <option value="7">96 botels</option>
-                        <option value="8">108 botels</option>
-                        <option value="9">120 botels</option>
+                    <select  class="selectBotels__select" onmouseover="setFocus()" onmouseout="removeFocus()">
+                        <option value="12">12 bottels</option>
+                        <option value="24">24 bottels</option>
+                        <option value="38">48 bottels</option>
+                        <option value="60">60 bottels</option>
+                        <option value="72">72 bottels</option>
+                        <option value="84">84 bottels</option>
+                        <option value="96">96 bottels</option>
+                        <option value="108">108 bottels</option>
+                        <option value="120">120 bottels</option>
                     </select>
                     <div class="selectBotels__checkbox">
-                        <div class="tooltip" style="display: none;">
+                        <div class="tooltip">
                             <p>By subscribing you will receive 12 bottles of Simpleat monthly </p>
                             <p>You can cancel your subscription anytime.<a href="#"> Learn more</a> </p>
+                            <span></span>
                         </div>
                             <label class="selectBotels__checkbox__box selectBotels__checkbox__box1" for="onnetime">
-                                <input type="checkbox" id='onetime' />
+                                <input type="checkbox" id='onetime'/>
                                 <span class="selectBotels__checkbox__text"><b>One Time</b></br>Purchase</span>
                                 <span class="checkmark"><span></span></span>
                             </label>
                     </l>
                             <label class="selectBotels__checkbox__box selectBotels__checkbox__box2" for="subscribe">
-                                <input type="checkbox" id='subscribe' />
+                                <input type="checkbox" id='subscribe' checked/>
                                 <span class="selectBotels__checkbox__text"><b>Subscribe</b></br>and save 5%</span>
                                 <span class="checkmark"><span></span></span>
                             </label>
@@ -89,10 +92,16 @@
                     <button class="btn btn--md">Add to cart</button>
                 </div>
             </div>
+            <div class="cookies">
+                <span>!</span>
+                <p>This website uses cookies. The information in the cookies is used to provide the best experience for you on our website.</p>
+                <button class="btn btn--sm" onclick="hideMessage()">I agree </button>
+            </div>
         </section>
         <section class="video">
             <div class="video__desc">
                 <h2 class="video__desc-heading">What is simpleat?</h2>
+                 <img src="./img/icons/superfood-logo-white.png" alt="marrk">
                 <p>
                     Simpleat is made to provide the perfectly balanced diet with every nutrient your body needs for
                     optimal health.</p>
@@ -100,9 +109,8 @@
                     work, business, travel or simply having fun.
                 </p>
             </div>
-            <div class="video__block">
-                <!--             <iframe width="560" height="315" src="https://www.youtube.com/embed/V6iKSUoUN48" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
- --> <img src="./img/video.jpg" alt="poster">
+            <div class="video__block" onclick="showVideo()">
+ <img src="./img/video.jpg" alt="poster">
                 <div class="video__block__play-btn">
                     <span><button>&#9655;</button></span>
                     <span>Play video</span>
@@ -111,6 +119,7 @@
         </section>
         <section class="simpleat">
             <h2 class="simpleat__heading">Why Simpleat?</h2>
+            <img src="./img/icons/superfood-logo.png" alt="logo">
             <h3>Enjoy all the benefits of Simpleat</h3>
             <div class="boxWrapp">
                 <div class="boxWrapp__box boxWrapp__box1">
@@ -158,12 +167,17 @@
                 </div>
             </div>
             <button class="btn btn--xl">Order Simpleat</button>
-
         </section>
         <section class="testimonials">
+            <div class="testimonials__videowrapp">
+                <button class="btn btn--test" onclick="closeVideoBlock()"><span></span></button>
+                <div class="testimonials__videowrapp__box">
+                </div>
+            </div>
             <h2 class="testimonials__heading">Testimonials</h2>
-            <span>Simpleat is made to provide the perfectly balanced diet with every nutrient your body needs for
-                optimal health.</span>
+            <img src="./img/icons/superfood-logo.png" alt="logo">
+            <p>Simpleat is made to provide the perfectly balanced diet with every nutrient your body needs for
+                optimal health.</p>
             <div class="testBoxWrapp">
                 <div class="testBoxWrapp__box">
                     <img src="./img/icons/test-play.png" alt="testplay">
@@ -196,7 +210,8 @@
         </section>
         <section class="ingridients">
             <h2 class="ingridients__heading">Main ingredients</h2>
-            <span>What is inside Simpleat?</span>
+            <img src="./img/icons/superfood-logo.png" alt="logo">
+            <p>What is inside Simpleat?</p>
             <div class="ingrdBoxWrapp">
                 <div class="ingrdBoxWrapp__box">
                     <img src="/img/Soyabean.jpg" alt="Soyabean">
@@ -233,13 +248,14 @@
         </section>
         <section class="nutritional">
             <h2 class="nutritional__heading">Nutritional Facts</h2>
+            <img src="./img/icons/superfood-logo.png" alt="logo">
             <div class="wrapper">
                 <div class="wrapper__left">
                     <div class="wrapper__left__box">
                         <img src="./img/icons/nut1.png" alt="1">
                         <div class="wrapper__left__box__text">
                             <h3>Enrgy</h3>
-                            <p> 400 kcal in one bottle 20% of your daily needs</p>
+                            <p> 400 kcal in one bottle</br> 20% of your daily needs</p>
                         </div>
 
                     </div>
@@ -247,14 +263,17 @@
                         <img src="./img/icons/nut2.png" alt="2">
                         <div class="wrapper__left__box__text">
                             <h3>Nutrients</h3>
-                            <p> 25 micronutrients 20% of your daily requirements in e</p>
+                            <p> 25 micronutrients
+                                20% of your daily requirements
+                                in each bottle</p>
                         </div>
                     </div>
                     <div class="wrapper__left__box">
                         <img src="./img/icons/nut3.png" alt="3">
                         <div class="wrapper__left__box__text">
                             <h3>Neutral pleasant taste</h3>
-                            <p> Enjoy Simpleat's neutral taste several t</p>
+                            <p> Enjoy Simpleat's neutral taste
+                                several times a day and never get tired</p>
                         </div>
                     </div>
                 </div>
@@ -279,7 +298,7 @@
                     </div>
                     <div class="wrapper__right__box">
                         <img src="./img/icons/nut6.png" alt="6">
-                        <div class="wrapper__left__box__text">
+                        <div class="wrapper__right__box__text">
                             <h3>Anywhere you go</h3>
                             <p>1-year shelf life and no refrigeration required</p>
                         </div>
@@ -287,12 +306,13 @@
                 </div>
             </div>
             <div class="nutritional__footer">
-                <a href="#" download="#">Download PDF</a>
-                <button class="btn">Order now</button>
+                <a href="./img/pdf-test.pdf" download="nutritional facts">Download PDF</a>
+                <button class="btn btn--mdl">Order now</button>
             </div>
         </section>
         <section class="chart">
             <h2 class="chart__heading">Low glycemic and insulin index</h2>
+            <img src="./img/icons/superfood-logo.png" alt="superFood">
             <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -301,13 +321,14 @@
             <img src="./img/grafic.png" alt="grafic">
         </section>
         <section class="superFood">
-            <h2>Simpleat — Super food</h2>
+            <h2 class="superFood__heading">Simpleat — Super food</h2>
+            <img src="./img/icons/superfood-logo.png" alt="logo">
             <p>Nutritional Profile.</br>Click on the Title to learm more</p>
             <div class="tabsContainer">
                 <div class="btn__wrapper">
-                    <button class="btn  active">Macronutreins</button>
-                    <button class="btn ">Vitamins</button>
-                    <button class="btn ">Minerals</button>
+                    <button class="btn btn__superFood  active">Macronutreins</button>
+                    <button class="btn btn__superFood ">Vitamins</button>
+                    <button class="btn btn__superFood ">Minerals</button>
                 </div>
                 <div class="gallery gallery--shown">
                     <div class="gallery__right">
@@ -315,7 +336,7 @@
                         <span>What's inside? </span>
                     </div>
                     <div class="gallery__left">
-                        <ul>
+                        <ul class="gallery__left__nutfacts">
                             <li></li>
                             <li>calories</li>
                             <li>fat</li>
@@ -330,7 +351,7 @@
                             <li>protein</li>
                             <li>salt</li>
                         </ul>
-                        <ul>
+                        <ul class="gallery__left__amount">
                             <li>Amount</li>
                             <li>400 kcal</li>
                             <li> 27.7g</li>
@@ -345,7 +366,7 @@
                             <li>40.1g</li>
                             <li>2.1g</li>
                         </ul>
-                        <ul>
+                        <ul class="gallery__left__ri">
                             <li>%RI</li>
                             <li>20%</li>
                             <li> </li>
@@ -362,13 +383,13 @@
                         </ul>
                     </div>
                 </div>
-                <div class="gallery">
+                <div class="gallery ">
                     <div class="gallery__right">
                         <img src="./img/Bottles-SuperFoood.png" alt="botle">
                         <span>What's inside? </span>
                     </div>
                     <div class="gallery__left">
-                        <ul>
+                        <ul class="gallery__left__nutfacts">
                             <li></li>
                             <li>calories</li>
                             <li>fat</li>
@@ -383,7 +404,7 @@
                             <li>protein</li>
                             <li>salt</li>
                         </ul>
-                        <ul>
+                        <ul class="gallery__left__amount">
                             <li>Amount</li>
                             <li>400 kcal</li>
                             <li> 27.7g</li>
@@ -398,7 +419,7 @@
                             <li>40.1g</li>
                             <li>2.1g</li>
                         </ul>
-                        <ul>
+                        <ul class="gallery__left__ri">
                             <li>%RI</li>
                             <li>20%</li>
                             <li> </li>
@@ -415,13 +436,13 @@
                         </ul>
                     </div>
                 </div>
-                <div class="gallery">
+                <div class="gallery ">
                     <div class="gallery__right">
                         <img src="./img/Bottles-SuperFoood.png" alt="botle">
                         <span>What's inside? </span>
                     </div>
                     <div class="gallery__left">
-                        <ul>
+                        <ul class="gallery__left__nutfacts">
                             <li></li>
                             <li>calories</li>
                             <li>fat</li>
@@ -436,7 +457,7 @@
                             <li>protein</li>
                             <li>salt</li>
                         </ul>
-                        <ul>
+                        <ul class="gallery__left__amount">
                             <li>Amount</li>
                             <li>400 kcal</li>
                             <li> 27.7g</li>
@@ -451,7 +472,7 @@
                             <li>40.1g</li>
                             <li>2.1g</li>
                         </ul>
-                        <ul>
+                        <ul class="gallery__left__ri">
                             <li>%RI</li>
                             <li>20%</li>
                             <li> </li>
@@ -468,46 +489,52 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-            <button class="btn">Order now</button>
+            <button class="btn btn--mdl">Order now</button>
         </section>
         <section class="newsletter">
-            <h2>Join US</h2>
+            <h2 class="newsletter__heading">Join US</h2>
+            <img src="./img/icons/superfood-logo.png" alt="logo">
             <p>Stay updated, enjoy special offers and bonuses</p>
             <form>
                 <input type="text" placeholder="Your e-mail">
-                <button class="btn">Sign up!</button>
+                <button class="btn btn--form">Sign up!</button>
             </form>
         </section>
         <section class="footer">
             <div class="footer__topwrapp">
                 <ul class="social">
-                    <li class="social__item"><a href="#" class="social__link">facebook</a></li>
-                    <li class="social__item"><a href="#" class="social__link">twitter</a></li>
-                    <li class="social__item"><a href="#" class="social__link">instagram</a></li>
+                    <li class="social__item"><a href="https://www.facebook.com/" target="blank" class="social__link social__link--bottom"> <svg class="singInOrder__icon">
+                        <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                    </svg></a></li>
+                    <li class="social__item"><a href="https://www.twitter.com/" target="blank" class="social__link"> <svg class="singInOrder__icon">
+                        <use xlink:href="img/sprite.svg#icon-twitter1"></use>
+                    </svg></a></li>
+                    <li class="social__item"><a href="https://www.instagram.com/" target="blank" class="social__link"> <svg class="singInOrder__icon">
+                        <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                    </svg></a></li>
                 </ul>
-                <ul class="social">
-                    <li class="social__item"><a href="#" class="social__link">BLOG</a></li>
-                    <li class="social__item"><a href="#" class="social__link">FAQ</a></li>
-                    <li class="social__item"><a href="#" class="social__link">LEGAL</a></li>
+                <ul class="social__bottom">
+                    <li class="social__bottom__item"><a href="#" class="social__bottom__link">BLOG</a></li>
+                    <li class="social__bottom__item"><a href="#" class="social__bottom__link">FAQ</a></li>
+                    <li class="social__bottom__item"><a href="#" class="social__bottom__link">LEGAL</a></li>
                 </ul>
-                &copy; 2018 Sinpleat
+                &copy;2018, Sinpleat
             </div>
             <div class="footer__bottom">
                 <div class="footer__bottom__right">
                     <div>   
                         <img src="./img/icons/footerPhone.png" alt="phone">
-                        <span>+123 456-789-000</br> Every day from 8 AM - 8 PM</span>
+                        <p><a href="tel:123456789000">+123 456-789-000</a></br> Every day from 8 AM - 8 PM</p>
                     </div>
                     <div>   
                         <img src="./img/icons/footerAnvelope.png" alt="mail">
-                        <span>info@simleat.me</br>We will respond ASAP</span>
+                        <p><a href="mailto:info@simleat.me">info@simleat.me</a></br>We will respond ASAP</p>
                     </div>
 
                 </div>
                 <div class="footer__bottom__left">
-                    <select name="" id="">
-                        <option value="en">English</option>
+                    <select name="" id="lang">
+                        <option value="en" data-pic='./img/icons/lang.png'>English</option>
                         <option value="ru">Russian</option>
                     </select>
 
@@ -517,6 +544,12 @@
             </div>
         </section>
     </div>
+    <div class="popup" id="popup" onclick="hideVideo()">
+        <div class="popup__content">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/J2lze3eXRiM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    <script src="./js/scripts.js"></script>
+    <script src="./js/cookieCheck.js"></script>
 </body>
-
 </html>

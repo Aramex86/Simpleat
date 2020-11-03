@@ -7,7 +7,7 @@
         text-transform: uppercase;
         font-family: $font-display;
         font-size: 4rem;
-        margin-bottom: 54px;
+        margin-bottom: 20px;
     }
     & p{
         font-family: $font-display;
@@ -15,6 +15,7 @@
         color: $color-dark-2;
         width: 60%;
         margin: 0 auto;
+        margin-top: 20px;
         margin-bottom: 40px;
     }
 }

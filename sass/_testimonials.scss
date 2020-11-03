@@ -4,57 +4,111 @@
   text-align: center;
   min-height: 600px;
   padding: 76px 0;
+  position: relative;
   &__heading {
     text-transform: uppercase;
     font-family: $font-display;
     font-size: 4rem;
-    margin-bottom: 54px;
+    margin-bottom: 20px;
   }
-  & span {
+  & p {
     font-family: $font-display;
     font-size: 1.6rem;
     color: $color-dark-2;
-    width: 80%;
+    margin-top: 20px;
+
+  }
+  &__videowrapp{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(128, 128, 128, 0.336);
+    height: 100%;
+     width: 100%;
+    transform: translateX(-100%);
+    z-index: 33;
+    transition: all 1s ease-in;
+    &__box{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      width: 50%;
+      height: 50%;
+    }
+   
   }
 }
-.testBoxWrapp{
-    margin-top: 45px;
+.testBoxWrapp {
     display: flex;
     justify-content: space-evenly;
-    padding: 0 15rem;
-&__box{
-    width: 32rem;
+    padding: 0 7rem;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 45px;
+    
+  &__box {
+    //width: 32rem;
+
+    //laptop
+    //width: 28rem;
     position: relative;
     cursor: pointer;
-    & img:nth-child(2){
-        width: 100%;
-        border-radius: 10px;
-       filter:contrast(67%);
+    & img:nth-child(2) {
+      width: 100%;
+      border-radius: 10px;
+      filter: contrast(67%);
+      width: 26.1rem;
+      height: 26.1rem;
     }
-    & img:nth-child(1){
-        position: absolute;
-        right: 13px;
-        top: 13px;
-        z-index: 2;
+    & img:nth-child(1) {
+      position: absolute;
+      right: 13px;
+      top: 13px;
+      z-index: 2;
     }
-    &-desc{
-        position: absolute;
-        bottom: 15px;
-        left: 15px;
-        width: 90%;
-        text-align: left;
-        & span{
-            color: $color-primary;
-            font-family: $font-display;
-            font-weight: 700;
-            font-size: 1.5rem;
-        }
-        & p{
-            color: $color-primary;
-            font-family: $font-display;
-            font-weight: 400;
-            font-size: 1.5rem;
-        }
+    &-desc {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      text-align: left;
+      & span {
+        color: $color-primary;
+        font-family: $font-display;
+        font-weight: 700;
+        font-size: 1.3rem;
+      }
+      & p {
+        color: $color-primary;
+        font-family: $font-display;
+        font-weight: 400;
+        font-size: 1.3rem;
+        margin: 0;
+      }
     }
+  }
+ 
 }
+
+.testimonials__videowrapp__box .testBoxWrapp__box{
+  & img:nth-child(2){
+    width: 50%;
+    filter: none;
+  }
+  & img:nth-child(1){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10%;
+    transform: translate(-50%,-50%);
+  }
+  & div{
+    display: none;
+  }
+  
+}
+
+.show__wrap{
+ transform: translateX(0);
+ width: 100%;
 }

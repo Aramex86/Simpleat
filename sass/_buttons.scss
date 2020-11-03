@@ -1,23 +1,105 @@
-.btn{
-    width: 13.1rem;
-    height: 4.3rem;
-    background:$color-hero-secondary ;
+.btn {
+  width: 13.1rem;
+  height: 4.3rem;
+  background: $color-hero-secondary;
+  border: none;
+  color: $color-light-1;
+  font-family: $font-display;
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  & a{
+    color: $color-primary;
+    text-decoration: none;
+  }
+  &--test{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    width: 30px;
+    height: 30px;
     border: none;
-    color: $color-light-1;
-     font-family: $font-display;
-     font-weight: 700;
-     border-radius: 5px;
-     font-size: 1.6rem;
-     cursor: pointer;
-     &--md{
-         width: 26rem;
-         height: 6rem;
-         background: $color-hero-secondary;
-     }
-     &--xl{
-         width: 28.4rem;
-         height: 6rem;
+    & span{
+      display: block;
+      position:relative;
+      width: 100%;
+      height: 2px;
+      background: $color-primary;
+      transform: rotate(-46deg);
+      &::before{
+        content: '';
+        position: absolute;
+        top: 1px;
+        background: #ffffff;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transform: rotate(-85deg);
+      }
+    }
+  }
+  &--sm{
+    width: 18.8rem;
+    height: 4rem;
+  }
+  &--md {
+    width: 26rem;
+    height: 6rem;
+    background: $color-hero-secondary;
+  }
+  &--xl {
+    width: 28.4rem;
+    height: 6rem;
+  }
+  &--mdl{
+    width: 19.5rem;
+    height: 6rem;
 
-     }
-    
+  }
+  &--form {
+    width: 22.2rem;
+    height: 6rem;
+  }
+  &__superFood {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: $color-dark-1;
+    position: relative;
+    text-transform: uppercase;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 85%;
+      left: 50%;
+      background: $color-dark-1;
+      width: 20%;
+      height: 3px;
+      display: block;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__superFood:nth-child(1) {
+    // background: transparent;
+    // border: none;
+    // outline: none;
+    // color: $color-dark-1;
+    &::after {
+      // content: '';
+      // background: $color-secondary;
+      width: 73%;
+      top: 85%;
+      left: 57%;
+      // height: 2px;
+      // display: flex;
+    }
+  }
+}
+
+.active {
+  color: $color-secondary;
+  &::after {
+    background: $color-secondary;
+  }
 }

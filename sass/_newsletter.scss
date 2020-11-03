@@ -1,3 +1,35 @@
 .newsletter{
-    grid-column: 1/-1;
+    grid-column: 2/14;
+    min-height: 400px;
+    padding: 90px 0;
+    text-align: center;
+    &__heading{
+        text-transform: uppercase;
+        font-family: $font-display;
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+    p {
+        margin-top: 20px;
+        color: $color-dark-2;
+        font-family: $font-display;
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-bottom: 45px;
+    }
+    & form{
+        & input{
+            width: 50.6rem;
+            height: 6rem;
+            border: 2px solid #e5e4d7;
+            font-family: $font-display;
+            font-weight: 700;
+            border-radius: 6px;
+            padding: 0 2rem;
+            font-size: 1.6rem;
+            &::placeholder{
+                color:black;
+            }
+        }
+    }
 }

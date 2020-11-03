@@ -8,13 +8,13 @@
     text-transform: uppercase;
     font-family: $font-display;
     font-size: 4rem;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
-  & span {
+  & p {
     font-family: $font-display;
     font-size: 1.6rem;
     color: $color-dark-2;
-    width: 80%;
+    margin-top: 20px;
   }
 }
 .ingrdBoxWrapp {
