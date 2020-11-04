@@ -212,8 +212,11 @@ body {
     font-size: 1.6rem;
     appearance: none;
     background: url(../img/icons/arrow-down.png) 93% no-repeat, #1e252b; }
-  .footer__bottom__left select#lang option[value='en'] {
-    background-image: url(../img/icons/lang.png); }
+
+.img-flag {
+  width: 20px;
+  height: 15px;
+  vertical-align: middle; }
 
 .header {
   grid-column: 1/-1;
@@ -269,7 +272,6 @@ body {
   min-height: 700px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 8.8rem 0;
   position: relative;
   margin-top: 11.2rem; }
 
@@ -408,6 +410,9 @@ body {
   bottom: -15%;
   left: 50%;
   transform: translate(-50%, -50%); }
+  @media only screen and (max-width: 50em) {
+    .cookies {
+      bottom: -12%; } }
   .cookies p {
     width: 75%;
     font-family: "Montserrat", sans-serif;
@@ -426,18 +431,22 @@ body {
     margin-right: 10px; }
 
 .tooltip {
-  display: none;
   position: absolute;
   width: 27.7rem;
   top: -218%;
   left: 45%;
   background: #fff;
   height: 100px;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   box-shadow: 0px 0px 8px 4px #9090908f;
   border-radius: 5px; }
+  @media only screen and (max-width: 75em) {
+    .tooltip {
+      font-size: 50%;
+      height: 80px; } }
   .tooltip p {
     width: 80%;
     font-size: 1.2rem; }
@@ -636,6 +645,9 @@ body {
 .boxWrapp {
   display: flex;
   margin-bottom: 20px; }
+  @media only screen and (max-width: 50em) {
+    .boxWrapp {
+      flex-wrap: wrap; } }
   .boxWrapp__box {
     border-radius: 50px;
     width: 50%;
@@ -669,7 +681,12 @@ body {
     top: 0px;
     left: 30px;
     border-radius: 86px;
-    opacity: 0.5; }
+    opacity: 0.5;
+    transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 50em) {
+      .boxWrapp__box1 .background {
+        top: 64px;
+        left: 195px; } }
   .boxWrapp__box2 .background {
     background: #7ad2e4;
     width: 16rem;
@@ -678,7 +695,12 @@ body {
     top: 0px;
     left: 30px;
     border-radius: 86px;
-    opacity: 0.5; }
+    opacity: 0.5;
+    transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 50em) {
+      .boxWrapp__box2 .background {
+        top: 64px;
+        left: 195px; } }
   .boxWrapp__box3 .background {
     background: #82d0ce;
     width: 16rem;
@@ -687,7 +709,12 @@ body {
     top: 0px;
     left: 30px;
     border-radius: 86px;
-    opacity: 0.5; }
+    opacity: 0.5;
+    transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 50em) {
+      .boxWrapp__box3 .background {
+        top: 64px;
+        left: 195px; } }
   .boxWrapp__box4 .background {
     background: #fcadb5;
     width: 16rem;
@@ -696,7 +723,12 @@ body {
     top: 0px;
     left: 30px;
     border-radius: 86px;
-    opacity: 0.5; }
+    opacity: 0.5;
+    transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 50em) {
+      .boxWrapp__box4 .background {
+        top: 64px;
+        left: 195px; } }
   .boxWrapp__box5 .background {
     background: #e5c159;
     width: 16rem;
@@ -705,7 +737,12 @@ body {
     top: 0px;
     left: 30px;
     border-radius: 86px;
-    opacity: 0.5; }
+    opacity: 0.5;
+    transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 50em) {
+      .boxWrapp__box5 .background {
+        top: 64px;
+        left: 195px; } }
   .boxWrapp__box6 .background {
     background: #e496dd;
     width: 16rem;
@@ -714,7 +751,12 @@ body {
     top: 0px;
     left: 30px;
     border-radius: 86px;
-    opacity: 0.5; }
+    opacity: 0.5;
+    transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 50em) {
+      .boxWrapp__box6 .background {
+        top: 64px;
+        left: 195px; } }
 
 .superFood {
   grid-column: 1/-1;
@@ -877,7 +919,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(128, 128, 128, 0.336);
+    background-color: rgba(43, 43, 43, 0.8);
     height: 100%;
     width: 100%;
     transform: translateX(-100%);

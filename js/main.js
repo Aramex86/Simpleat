@@ -27,7 +27,6 @@ subscribe.addEventListener("click", () => {
 $(function () {
   $("#selectBottels").change(function () {
     const $option = $(this).find("option:selected").hover();
-    console.log($option);
     $option.css("background-color", "#e4e4d7");
   });
   $("#selectBottels").mouseenter(function () {
@@ -65,6 +64,7 @@ const showVideoBlock = () => {
 showVideoBlock();
 const closeVideoBlock = () => {
   videoWrapp.classList.remove("show__wrap");
+  document.querySelector('.testimonials__videowrapp__box div').remove();
 };
 
 const hideMessage = () => {
@@ -85,4 +85,27 @@ $(function () {
       .eq($(this).index())
       .addClass("gallery--shown");
   });
+});
+
+//Footer lang
+
+
+function formatState (state) {
+  if (!state.id) {
+    return state.text;
+  }
+  var baseUrl = "/img/icons/lang";
+  var $state = $(
+    '<span><img src="' + baseUrl +   '.png" class="img-flag" /> ' + state.text + '</span>'
+  );
+  return $state;
+};
+
+$(function(){
+  $('#lang').select2({
+    templateResult: formatState,
+   
+  });
+  $('b[role=presentation]').hide();
+  $('.select2-selection select2-selection--single').css('background-color','none')
 });

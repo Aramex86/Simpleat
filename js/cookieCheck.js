@@ -1,4 +1,3 @@
+ 
 
-
-
-
+console.log(document.cookie);
