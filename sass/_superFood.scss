@@ -125,6 +125,28 @@
     display: flex;
   }
 }
+//TEST
+.gallery:nth-child(4){
+  & ul{
+    & li{
+      color: black;
+    }
+  }
+}
+.gallery:nth-child(3){
+  & ul{
+    & li{
+      color: burlywood;
+    }
+  }
+}
+
+
+
+
+
+
+//TEST
 .gallery:nth-child(4) {
   &::before {
     content: '';

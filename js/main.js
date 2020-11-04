@@ -8,6 +8,7 @@ const videoWrapp = document.querySelector('.testimonials__videowrapp');
 const cookiePop = document.querySelector('.cookies');
 
 
+
 //Hero checkbox
 if (subscribe.checked) {
   tooltip.style.display = "flex";
@@ -30,6 +31,13 @@ const setFocus = () => {
 const removeFocus = () => {
   tooltip.style.display = "flex";
 };
+$(function(){
+  
+})
+
+
+
+
 // Video popup
 const showVideo = () => {
   document
@@ -44,9 +52,6 @@ const hideVideo = () => {
 };
 
 //Testimonials video
-console.log(testVideo);
-console.log(testVideoBox);
-console.log(videoWrapp);
 
 const showVideoBlock=()=>{
   for(let i=0;i<testVideo.length;i++){
@@ -66,4 +71,15 @@ const closeVideoBlock=()=>{
 
 const hideMessage=()=>{
     cookiePop.classList.add('close__popup');
-}
+};
+
+//Tabs switch
+
+$(function() {
+  $('.btn__wrapper').on('click','button:not(.active)',function(){
+    $(this).addClass('active').siblings().removeClass('active').closest('div.container').find('div.gallery').removeClass('gallery--shown').eq($(this).index()).addClass('gallery--shown');
+    });
+
+});
+
+  
