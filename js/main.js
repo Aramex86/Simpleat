@@ -109,3 +109,6 @@ $(function(){
   $('b[role=presentation]').hide();
   $('.select2-selection select2-selection--single').css('background-color','none')
 });
+
+
+

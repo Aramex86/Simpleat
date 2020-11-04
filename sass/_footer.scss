@@ -69,12 +69,21 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem 6rem;
+  @media only screen and (max-width:  $bp-medium){
+    padding: 2rem 2rem;
+  }
   &__right{
     display: flex;
     align-items: center;
     color: $color-primary;
     justify-content: space-around;
     width: 40%;
+    @media only screen and (max-width:  $bp-medium){
+      width: 52%;
+    }
+    @media only screen and (max-width:  $bp-small){
+      width: 60%;
+    }
     & div{
       width: 45%;
       display: flex;

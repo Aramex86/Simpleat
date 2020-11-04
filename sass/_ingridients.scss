@@ -14,16 +14,26 @@
     font-size: 1.6rem;
     color: $color-dark-2;
     margin-top: 20px;
+    @media only screen and (max-width: $bp-small) {
+      font-size: 3rem;
+    }
   }
 }
 .ingrdBoxWrapp {
   margin-top: 40px;
   display: flex;
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+  }
   &__box {
     width: 20%;
-display: flex;
-flex-direction: column;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+      margin-bottom: 15px;
+    }
     & img {
       width: 19.5rem;
       height: 19.5rem;
@@ -36,6 +46,10 @@ align-items: center;
       color: $color-dark-1;
       font-size: 2rem;
       margin-bottom: 30px;
+      @media only screen and (max-width: $bp-medium) {
+        margin-bottom: 0;
+      }
+     
     }
     & p {
       font-size: 1.6rem;

@@ -16,16 +16,22 @@
     font-size: 1.6rem;
     font-weight: 400;
     margin-bottom: 45px;
+    @media only screen and (max-width: $bp-medium) {
+      margin-bottom: 10px;
+    }
+    @media only screen and (max-width: $bp-small){
+      font-size: 3rem;
+      margin-bottom: 25px;
+ }
   }
 }
 
 .boxWrapp {
   display: flex;
   margin-bottom: 20px;
-  @media only screen and (max-width: $bp-medium){
+  @media only screen and (max-width: $bp-medium) {
     flex-wrap: wrap;
-    
-}
+  }
   &__box {
     border-radius: 50px;
     width: 50%;
@@ -37,12 +43,21 @@
       height: 16rem;
       border-radius: 100%;
       margin-bottom: 40px;
+      @media only screen and (max-width: $bp-medium) {
+        margin-bottom: 0;
+      }
     }
     & img:nth-child(3) {
       position: absolute;
       top: 21%;
       left: 50%;
       transform: translate(-50%, -50%);
+      @media only screen and (max-width: $bp-medium) {
+        top:30%;
+      }
+      @media only screen and (max-width: $bp-small) {
+        top:26%;
+      }
     }
     & h3 {
       font-family: $font-primary;
@@ -55,6 +70,9 @@
       color: #5a6065;
       margin: 0 auto;
       width: 95%;
+      @media only screen and (max-width: $bp-medium) {
+        margin-bottom: 10px;
+      }
     }
   }
   &__box1 .background {
@@ -62,48 +80,67 @@
     width: 16rem;
     height: 16rem;
     position: absolute;
-    top: 0px;
-    left: 30px;
+    top: 80px;
+    left: 110px;
     border-radius: 86px;
     opacity: 0.5;
-    transform:translate(-50%,-50%);
-     @media only screen and (max-width: $bp-medium){
-     top: 64px;
-    left: 195px;
-    
-}
+    transform: translate(-50%, -50%);
+
+    @media only screen and (max-width: $bp-largest) {
+      top: 65px;
+      left: 88px;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      top: 64px;
+      left: 195px;
+    }
+    @media only screen and (max-width: $bp-small) {
+      left: 179px;
+    }
   }
   &__box2 .background {
     background: #7ad2e4;
     width: 16rem;
     height: 16rem;
     position: absolute;
-    top: 0px;
-    left: 30px;
+    top: 80px;
+    left: 110px;
     border-radius: 86px;
     opacity: 0.5;
-    transform:translate(-50%,-50%);
-     @media only screen and (max-width: $bp-medium){
-     top: 64px;
-    left: 195px;
-    
-}
+    transform: translate(-50%, -50%);
+    @media only screen and (max-width: $bp-largest) {
+      top: 65px;
+      left: 88px;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      top: 64px;
+      left: 195px;
+    }
+    @media only screen and (max-width: $bp-small) {
+      left: 179px;
+    }
   }
   &__box3 .background {
     background: #82d0ce;
     width: 16rem;
     height: 16rem;
     position: absolute;
-    top: 0px;
-    left: 30px;
+    top: 80px;
+    left: 110px;
     border-radius: 86px;
     opacity: 0.5;
-    transform:translate(-50%,-50%);
-     @media only screen and (max-width: $bp-medium){
-    top: 64px;
-    left: 195px;
-    
-}
+    transform: translate(-50%, -50%);
+    @media only screen and (max-width: $bp-largest) {
+      top: 65px;
+      left: 88px;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      top: 64px;
+      left: 195px;
+    }
+    @media only screen and (max-width: $bp-small) {
+      left: 179px;
+    }
   }
 
   &__box4 .background {
@@ -111,16 +148,22 @@
     width: 16rem;
     height: 16rem;
     position: absolute;
-    top: 0px;
-    left: 30px;
+    top: 80px;
+    left: 110px;
     border-radius: 86px;
     opacity: 0.5;
-    transform:translate(-50%,-50%);
-     @media only screen and (max-width: $bp-medium){
-     top: 64px;
-    left: 195px;
-    
-}
+    transform: translate(-50%, -50%);
+    @media only screen and (max-width: $bp-largest) {
+      top: 65px;
+      left: 88px;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      top: 64px;
+      left: 195px;
+    }
+    @media only screen and (max-width: $bp-small) {
+      left: 179px;
+    }
   }
 
   &__box5 .background {
@@ -128,16 +171,22 @@
     width: 16rem;
     height: 16rem;
     position: absolute;
-    top: 0px;
-    left: 30px;
+    top: 80px;
+    left: 110px;
     border-radius: 86px;
     opacity: 0.5;
-    transform:translate(-50%,-50%);
-     @media only screen and (max-width: $bp-medium){
-     top: 64px;
-    left: 195px;
-    
-}
+    transform: translate(-50%, -50%);
+    @media only screen and (max-width: $bp-largest) {
+      top: 65px;
+      left: 88px;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      top: 64px;
+      left: 195px;
+    }
+    @media only screen and (max-width: $bp-small) {
+      left: 179px;
+    }
   }
 
   &__box6 .background {
@@ -145,15 +194,21 @@
     width: 16rem;
     height: 16rem;
     position: absolute;
-    top: 0px;
-    left: 30px;
+    top: 80px;
+    left: 110px;
     border-radius: 86px;
     opacity: 0.5;
-    transform:translate(-50%,-50%);
-     @media only screen and (max-width: $bp-medium){
-    top: 64px;
-    left: 195px;
-    
-}
+    transform: translate(-50%, -50%);
+    @media only screen and (max-width: $bp-largest) {
+      top: 65px;
+      left: 88px;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      top: 64px;
+      left: 195px;
+    }
+    @media only screen and (max-width: $bp-small) {
+      left: 179px;
+    }
   }
 }

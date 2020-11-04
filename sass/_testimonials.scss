@@ -16,6 +16,10 @@
     font-size: 1.6rem;
     color: $color-dark-2;
     margin-top: 20px;
+    @media only screen and (max-width: $bp-small){
+      font-size: 3rem;
+      padding: 0 1rem;
+ }
 
   }
   &__videowrapp{
@@ -35,6 +39,12 @@
       transform: translate(-50%,-50%);
       width: 50%;
       height: 50%;
+      @media only screen and (max-width:  $bp-largest){
+       top: 40%;
+   }
+      @media only screen and (max-width:  $bp-medium){
+       top: 60%;
+   }
     }
    
   }
@@ -47,6 +57,12 @@
     margin: 0 auto;
     margin-top: 45px;
     
+    @media only screen and (max-width:  $bp-medium){
+      flex-wrap: wrap;
+ }
+  
+   
+    
   &__box {
     //width: 32rem;
 
@@ -54,6 +70,9 @@
     //width: 28rem;
     position: relative;
     cursor: pointer;
+    @media only screen and (max-width:  $bp-medium){
+      margin-bottom: 10px;
+ }
     & img:nth-child(2) {
       width: 100%;
       border-radius: 10px;
@@ -91,9 +110,14 @@
 }
 
 .testimonials__videowrapp__box .testBoxWrapp__box{
+  
   & img:nth-child(2){
     width: 50%;
     filter: none;
+    @media only screen and (max-width:  $bp-largest){
+      height: 100%;
+      width: 100%;
+ }
   }
   & img:nth-child(1){
     position: absolute;

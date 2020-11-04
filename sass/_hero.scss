@@ -6,18 +6,28 @@
   //padding: 8.8rem 0;
   position: relative;
   margin-top: 11.2rem;
-  @media only screen and (max-width: $bp-medium){
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
-}
+  @media only screen and (max-width: $bp-small) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 }
 
 .botels {
   grid-column: 1/1;
+  @media only screen and (max-width: $bp-small) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
   &__img {
     width: 80%;
+    @media only screen and (max-width: $bp-small) {
+      width: 50%;
+    }
   }
 }
 
@@ -25,6 +35,10 @@
   grid-column: 2/2;
   display: flex;
   flex-direction: column;
+  @media only screen and (max-width: $bp-small) {
+    width: 80%;
+    margin-bottom: 25px;
+  }
 
   &__text {
     text-align: center;
@@ -43,6 +57,9 @@
       color: $color-dark-2;
       margin: 0 auto;
       margin-bottom: 16px;
+      @media only screen and (max-width: $bp-small) {
+        font-size: 3rem;
+      }
     }
     &__order {
       font-family: $font-display;
@@ -177,9 +194,9 @@
   bottom: -15%;
   left: 50%;
   transform: translate(-50%, -50%);
-  @media only screen and (max-width: $bp-medium){
+  @media only screen and (max-width: $bp-medium) {
     bottom: -12%;
-}
+  }
   & p {
     width: 75%;
     font-family: $font-display;
@@ -197,7 +214,6 @@
     justify-content: center;
     align-items: center;
     margin-right: 10px;
-    
   }
 }
 .tooltip {
@@ -213,12 +229,11 @@
   justify-content: center;
   box-shadow: 0px 0px 8px 4px #9090908f;
   border-radius: 5px;
-  @media only screen and (max-width: $bp-largest){
+  @media only screen and (max-width: $bp-largest) {
     font-size: 50%;
     height: 80px;
-}
- 
-  
+  }
+
   & p {
     width: 80%;
     font-size: 1.2rem;
@@ -226,21 +241,20 @@
   & p:nth-child(1) {
     margin-bottom: 14px;
   }
-    & span{
-      display: block;
-      clip-path: polygon(53% 100%, 0 0, 100% 0);
-      position: absolute;
-      bottom: -7px;
-      background: #fff;
-      width: 9px;
-      height: 7px;
-    }
-    & a {
-      color: $color-secondary;
-    }
-  
+  & span {
+    display: block;
+    clip-path: polygon(53% 100%, 0 0, 100% 0);
+    position: absolute;
+    bottom: -7px;
+    background: #fff;
+    width: 9px;
+    height: 7px;
+  }
+  & a {
+    color: $color-secondary;
+  }
 }
 
-.close__popup{
+.close__popup {
   display: none;
 }

@@ -16,6 +16,9 @@
     width: 100%;
     margin-top: 20px;
     margin-bottom: 62px;
+    @media only screen and (max-width: $bp-small) {
+      font-size: 3rem;
+    }
   }
 }
 
@@ -33,6 +36,9 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+  @media only screen and (max-width: $bp-small) {
+    width: 75%;
+  }
 }
 
 .gallery {
@@ -52,6 +58,9 @@
     align-items: center;
     text-align: left;
     padding: 0 5rem;
+    @media only screen and (max-width: $bp-small) {
+      width: 70%;
+    }
     & ul {
       & li {
         padding: 10px 0;
@@ -61,8 +70,11 @@
         font-family: $font-display;
         border-bottom: 1px solid gray;
         list-style: none;
+        @media only screen and (max-width: $bp-small) {
+          font-size: 2rem;
+        }
         &::before {
-          content: '\2022';
+          content: "\2022";
           color: $color-primary;
           font-weight: bold;
           display: inline-block;
@@ -73,6 +85,9 @@
     }
     &__nutfacts {
       width: 33.33%;
+      @media only screen and (max-width: $bp-medium) {
+        width: 48.33%;
+      }
       & li {
         color: $color-secondary;
         // font-size: 1.6rem;
@@ -83,6 +98,9 @@
     }
     &__amount {
       width: 33.33%;
+      @media only screen and (max-width: $bp-medium) {
+        width: 28.33%;
+      }
       & li {
         color: $color-dark-1;
         font-family: $font-primary;
@@ -91,6 +109,9 @@
     }
     &__ri {
       width: 33.33%;
+      @media only screen and (max-width: $bp-medium) {
+        width: 29.33%;
+      }
       & li {
         text-align: center;
       }
@@ -99,6 +120,9 @@
   &__right {
     width: 40%;
     position: relative;
+    @media only screen and (max-width: $bp-small) {
+      width: 32%;
+    }
     & span {
       position: absolute;
       top: 56%;
@@ -115,6 +139,9 @@
       left: 50%;
       top: 55%;
       transform: translate(-50%, -50%);
+      @media only screen and (max-width: $bp-small) {
+        width: 62%;
+      }
     }
   }
 }
@@ -123,33 +150,31 @@
   position: relative;
   &--shown {
     display: flex;
+    @media only screen and (max-width: $bp-small) {
+      width: 95%;
+    }
   }
 }
 //TEST
-.gallery:nth-child(4){
-  & ul{
-    & li{
+.gallery:nth-child(4) {
+  & ul {
+    & li {
       color: black;
     }
   }
 }
-.gallery:nth-child(3){
-  & ul{
-    & li{
+.gallery:nth-child(3) {
+  & ul {
+    & li {
       color: burlywood;
     }
   }
 }
 
-
-
-
-
-
 //TEST
 .gallery:nth-child(4) {
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     height: 19px;
     width: 34px;
@@ -157,11 +182,14 @@
     top: -17px;
     right: 23.5%;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
   }
 }
 .gallery:nth-child(2) {
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     height: 19px;
     width: 34px;
@@ -169,11 +197,14 @@
     top: -17px;
     left: 24.5%;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
   }
 }
 .gallery:nth-child(3) {
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     height: 19px;
     width: 34px;
@@ -181,5 +212,8 @@
     top: -17px;
     left: 48.5%;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
   }
 }
