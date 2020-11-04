@@ -458,7 +458,6 @@ body {
   display: none; }
 
 .ingridients {
-  grid-row: 6/6;
   grid-column: 2/14;
   min-height: 745px;
   padding: 98px 0;

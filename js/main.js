@@ -4,10 +4,8 @@ const tooltip = document.querySelector(".tooltip");
 const options = document.querySelectorAll(".selectBotels__select option");
 const testVideoBox = document.querySelector(".testimonials__videowrapp__box");
 const testVideo = document.querySelectorAll(".testBoxWrapp__box");
-const videoWrapp = document.querySelector('.testimonials__videowrapp');
-const cookiePop = document.querySelector('.cookies');
-
-
+const videoWrapp = document.querySelector(".testimonials__videowrapp");
+const cookiePop = document.querySelector(".cookies");
 
 //Hero checkbox
 if (subscribe.checked) {
@@ -25,18 +23,20 @@ subscribe.addEventListener("click", () => {
   tooltip.style.display = "flex";
 });
 // Hero select
-const setFocus = () => {
-  tooltip.style.display = "none";
-};
-const removeFocus = () => {
-  tooltip.style.display = "flex";
-};
-$(function(){
-  
-})
 
-
-
+$(function () {
+  $("#selectBottels").change(function () {
+    const $option = $(this).find("option:selected").hover();
+    console.log($option);
+    $option.css("background-color", "#e4e4d7");
+  });
+  $("#selectBottels").mouseenter(function () {
+    $(".tooltip").hide();
+  });
+  $("#selectBottels").mouseleave(function () {
+    $(".tooltip").show();
+  });
+});
 
 // Video popup
 const showVideo = () => {
@@ -53,33 +53,36 @@ const hideVideo = () => {
 
 //Testimonials video
 
-const showVideoBlock=()=>{
-  for(let i=0;i<testVideo.length;i++){
-    testVideo[i].addEventListener('click',(event)=>{
-      videoWrapp.classList.add('show__wrap');
+const showVideoBlock = () => {
+  for (let i = 0; i < testVideo.length; i++) {
+    testVideo[i].addEventListener("click", (event) => {
+      videoWrapp.classList.add("show__wrap");
       let vid = event.currentTarget;
-      testVideoBox.insertAdjacentHTML('afterbegin',vid.outerHTML);
-    })
+      testVideoBox.insertAdjacentHTML("afterbegin", vid.outerHTML);
+    });
   }
-}
+};
 showVideoBlock();
-
-
-const closeVideoBlock=()=>{
-  videoWrapp.classList.remove('show__wrap');
+const closeVideoBlock = () => {
+  videoWrapp.classList.remove("show__wrap");
 };
 
-const hideMessage=()=>{
-    cookiePop.classList.add('close__popup');
+const hideMessage = () => {
+  cookiePop.classList.add("close__popup");
 };
 
 //Tabs switch
 
-$(function() {
-  $('.btn__wrapper').on('click','button:not(.active)',function(){
-    $(this).addClass('active').siblings().removeClass('active').closest('div.container').find('div.gallery').removeClass('gallery--shown').eq($(this).index()).addClass('gallery--shown');
-    });
-
+$(function () {
+  $(".btn__wrapper").on("click", "button:not(.active)", function () {
+    $(this)
+      .addClass("active")
+      .siblings()
+      .removeClass("active")
+      .closest("div.container")
+      .find("div.gallery")
+      .removeClass("gallery--shown")
+      .eq($(this).index())
+      .addClass("gallery--shown");
+  });
 });
-
-  
